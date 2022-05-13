@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.textfield.TextInputLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/outlinedTextField"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="26dp"
+        android:layout_marginTop="30dp"
+        android:hint="Please enter the OTP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etOTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.aravind.learnandroid.OtpTextView
+        android:id="@+id/otp_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        app:bar_active_color="@color/white"
+        app:bar_enabled="false"
+        app:bar_error_color="@color/red"
+        app:bar_height="1.5dp"
+        app:otp_box_background="@drawable/rectangular_border"
+        app:bar_inactive_color="@color/whiteoff"
+        app:bar_margin_bottom="0dp"
+        app:bar_margin_left="2dp"
+        app:bar_margin_right="2dp"
+        app:bar_success_color="@android:color/holo_green_light"
+        app:box_margin="0dp"
+        app:height="40dp"
+        app:hide_otp="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:length="4"
+        app:otp=""
+        android:autofillHints="smsOTPCode"
+        android:importantForAutofill="yes"
+        app:otp_text_size="20dp"
+        app:width="40dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
